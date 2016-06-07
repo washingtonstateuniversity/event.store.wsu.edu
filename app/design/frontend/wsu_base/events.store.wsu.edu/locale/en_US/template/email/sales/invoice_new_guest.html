@@ -31,22 +31,11 @@ body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif;
         <!-- [ middle starts here] -->
             <tr>
                 <td valign="top">
-                    <table cellspacing="0" cellpadding="0" border="0" height="100%" width="100%">
-                        <tr>
-                            <td align="center" valign="top" style="padding:20px 0 20px 0" width="75%">
-                        
-                                <h1 style="font-size:22px; font-weight:normal; line-height:22px; margin:0 0 11px 0;"">Hello, {{htmlescape var=$billing.getName()}}</h1>
-                                <h2>You are going to Design Build 2016!</h2>
-                                <p style="font-size:12px; line-height:16px; margin:0;">
-                                    Thank you for your order from {{var store.getFrontendName()}}.
-                                    If you have any questions about your order please contact us at <a href="mailto:{{config path='trans_email/ident_support/email'}}" style="color:#1E7EC8;">{{config path='trans_email/ident_support/email'}}</a>.
-                                </p>
-                            </td>
-                            <td>
-                                
-                            </td>
-                        </tr>
-                    </table>
+                    <h1 style="font-size:22px; font-weight:normal; line-height:22px; margin:0 0 11px 0;"">Hello, {{htmlescape var=$billing.getName()}}</h1>
+                    <p style="font-size:12px; line-height:16px; margin:0;">
+                        Thank you for your order from {{var store.getFrontendName()}}.
+                        If you have any questions about your order please contact us at <a href="mailto:{{config path='trans_email/ident_support/email'}}" style="color:#1E7EC8;">{{config path='trans_email/ident_support/email'}}</a> or call us at <span class="nobr">{{config path='general/store_information/phone'}}</span> Monday – Saturday 10 a.m. – 6 p.m. PST.
+                    </p>
                 </td>
             </tr>
             <tr>
