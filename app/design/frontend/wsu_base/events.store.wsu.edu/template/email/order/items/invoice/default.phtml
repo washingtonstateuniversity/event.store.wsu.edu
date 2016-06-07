@@ -34,7 +34,7 @@
             <?php foreach ($this->getItemOptions() as $option): ?>
             <dt><strong><em><?php echo $option['label'] ?></em></strong></dt>
             <dd style="margin:0; padding:0 0 0 9px;">
-                <?=htmlspecialchars_decode($_option['value']);?>
+                <?=htmlspecialchars_decode($option['value']);?>
             </dd>
             <?php endforeach; ?>
         </dl>
