@@ -33,13 +33,9 @@
         <dl style="margin:0; padding:0;">
             <?php foreach ($this->getItemOptions() as $option): ?>
             <dt><strong><em><?php echo $option['label'] ?></em></strong></dt>
-            <?php if( false !== strpos($_option['value'],'useHTMLOutput')): ?>
-            	<dd style="margin:0; padding:0 0 0 9px;">
-                	<?=htmlspecialchars_decode($_option['value']);?>
-                </dd>
-            <?php else: ?>
-                <dd style="margin:0; padding:0 0 0 9px;"><?php echo nl2br($option['value']) ?></dd>
-            <?php endif; ?>
+            <dd style="margin:0; padding:0 0 0 9px;">
+                <?=htmlspecialchars_decode($_option['value']);?>
+            </dd>
             <?php endforeach; ?>
         </dl>
         <?php endif; ?>
